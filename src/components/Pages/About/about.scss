@@ -1,0 +1,59 @@
+$back_img_about : '../../../images/store.jpg';
+
+.about {
+    background: linear-gradient( to left, rgba(0,0,0,0.2),
+     rgba(0,0,0,0.9)),url($back_img_about);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5rem;
+    h1{
+        color: #fff;
+        font-size: 5rem;
+        margin-bottom: 4rem;
+    }
+    p {
+        color: #fff;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about {
+        h1 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .about {
+        h1 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+    
+}
