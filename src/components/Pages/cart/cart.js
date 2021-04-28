@@ -49,6 +49,7 @@ const Cart = (props) => {
         <div>
           {props.state11.map((pro) => {
             sum += pro.count * parseInt(pro.price.slice(4, 20));
+            return null
           })}
           Total Price : {sum}
         </div>
